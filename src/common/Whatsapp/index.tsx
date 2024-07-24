@@ -23,9 +23,7 @@ const ScrollToTop = () => {
     }, [checkScrollTop]);
 
     const scrollUp = () => {
-        const element = document.getElementById(
-            'heroContainerAndHeader'
-        ) as HTMLDivElement;
+        const element = document.getElementById('contact') as HTMLDivElement;
         element.scrollIntoView({
             behavior: 'smooth',
             block: 'end',
@@ -35,7 +33,7 @@ const ScrollToTop = () => {
 
     return (
         <ScrollUpContainer onClick={scrollUp} show={showScroll}>
-            <SvgIcon src="scroll-top.svg" width="20px" height="20px" />
+            <SvgIcon src="WA.svg" width="40px" height="40px" />
         </ScrollUpContainer>
     );
 };

@@ -2,5 +2,5 @@
   <text y="30" font-family="Motiva Sans Bold, sans-serif" fill="#18216d" font-size="43px" font-weight="700">Cassia</text>
 </svg> -->
 <svg viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
-  <text y="40" font-family="Motiva Sans Bold, sans-serif" fill="#ffffff" font-size="43px" font-weight="700">Cassia</text>
+  <text y="40" font-family="serif" fill="#ffffff" font-size="43px" font-weight="700">Cassia</text>
 </svg>

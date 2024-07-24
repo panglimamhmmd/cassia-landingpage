@@ -3,13 +3,13 @@ import styled from "styled-components";
 export const ScrollUpContainer = styled("div")<{
   show: boolean;
 }>`
-  padding: 10px;
+  // padding: 10px;
   position: fixed;
   right: 30px;
-  bottom: 30px;
+  bottom: 75px;
   z-index: 10;
   cursor: pointer;
-  background: rgb(241, 242, 243);
+  background: #40C351;
   text-align: center;
   align-items: center;
   border-radius: 100px;
@@ -24,7 +24,5 @@ export const ScrollUpContainer = styled("div")<{
     background: rgb(224, 224, 224);
   }
 
-  // @media screen and (max-width: 1240px) {
-  //   display: none;
-  // }
+ 
 `;

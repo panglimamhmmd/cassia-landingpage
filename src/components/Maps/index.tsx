@@ -2,25 +2,16 @@ import { Row, Col } from 'antd';
 import { withTranslation, TFunction } from 'react-i18next';
 import { Slide } from 'react-awesome-reveal';
 import { Button } from '../../common/Button';
-import { MiddleBlockSection, Content, ContentWrapper, Title } from './styles';
-import { StyledRow } from '../ContentBlock/styles';
+import { MiddleBlockSection, Content, ContentWrapper } from './styles';
+
 interface MiddleBlockProps {
     title: string;
     content: string;
     button: string;
     t: TFunction;
-    id: string;
-    direction: 'left' | 'right';
 }
 
-const MiddleBlock = ({
-    title,
-    content,
-    button,
-    t,
-    id,
-    direction,
-}: MiddleBlockProps) => {
+const MiddleBlock = () => {
     const scrollTo = (id: string) => {
         const element = document.getElementById(id) as HTMLDivElement;
         element.scrollIntoView({
@@ -29,26 +20,30 @@ const MiddleBlock = ({
     };
     return (
         <MiddleBlockSection>
-            <StyledRow
-                justify="space-between"
-                align="middle"
-                id={id}
-                direction={direction}
-            ></StyledRow>
             <Slide direction="up" triggerOnce>
                 <Row justify="center" align="middle">
                     <ContentWrapper>
                         <Col lg={24} md={24} sm={24} xs={24}>
-                            <Title>{t(title)}</Title>
-                            <Content>{t(content)}</Content>
-                            {button && (
+                            <h6>The Ideal Location</h6>
+                            <Content>
+                                In the heart of Tangerang, lies an oasis which
+                                blends city living with surroundings that allow
+                                you to pursue your many passions. In just
+                                minutes, Cassia connects you with quality
+                                schools and universities, health care, sports
+                                facilities, entertainment, shopping, and the
+                                Soekarno-Hatta International Airport. Its prime
+                                site means time-saving conveniences, so you can
+                                create more special moments with loved ones.
+                            </Content>
+                            {/* {button && (
                                 <Button
                                     name="submit"
-                                    onClick={() => scrollTo('about')}
+                                    onClick={() => scrollTo('mission')}
                                 >
                                     {t(button)}
                                 </Button>
-                            )}
+                            )} */}
                         </Col>
                     </ContentWrapper>
                 </Row>

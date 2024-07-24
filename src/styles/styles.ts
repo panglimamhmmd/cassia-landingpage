@@ -9,8 +9,8 @@ export const Styles = createGlobalStyle`
     }
 
     @font-face {
-        font-family: "Motiva Sans Bold";
-        src: url("/fonts/Motiva-Sans-Bold.ttf") format("truetype");
+        font-family: "ribka";
+        src: url("/fonts/ribka.otf") format("");
         font-style: normal;
     }
 
@@ -117,7 +117,7 @@ export const Styles = createGlobalStyle`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-
+      background-attachment: fixed;
     ;
     }
 `;
