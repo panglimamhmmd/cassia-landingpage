@@ -6,10 +6,10 @@ export default function validate(values: validateProps) {
   if (!values.name) {
     errors.name = "Name is required";
   }
-  if (!values.email) {
-    errors.email = "Phone Number is required";
-  }else if (!/^\d{10,15}$/.test(values.email)) {
-    errors.email = "Phone Number is invalid";
+   if (!values.phone) {
+    errors.phone = "Phone Number is required";
+  } else if (!/^\d{10,15}$/.test(values.phone)) {
+    errors.phone = "Phone Number is invalid";
   }
   if (!values.message) {
     errors.message = "Message is required";
