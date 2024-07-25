@@ -58,7 +58,7 @@ const ContentBlock = ({
 
                             <ServiceWrapper>
                                 <Row justify="space-between">
-                                    <Col key={id} span={11}>
+                                    <Col key={`${id}-land`} span={11}>
                                         <MinTitle>
                                             <BoldText>
                                                 Luas Tanah {landSize} m²
@@ -70,7 +70,7 @@ const ContentBlock = ({
                                             </BoldText>
                                         </MinTitle>
                                     </Col>
-                                    <Col key={id} span={11}>
+                                    <Col key={`${id}-rooms`} span={11}>
                                         <MinTitle>
                                             <BoldText>
                                                 {bedrooms} Kamar Tidur

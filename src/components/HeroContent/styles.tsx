@@ -13,7 +13,6 @@ export const MiddleBlockSection = styled('section')`
 `;
 
 export const Title = styled('h6')`
-    font-family: Ribka;
     font-size: 13vh;
     padding: 0.75rem 0 0.75rem;
     color: white;

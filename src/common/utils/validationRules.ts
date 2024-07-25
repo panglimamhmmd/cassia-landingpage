@@ -7,9 +7,9 @@ export default function validate(values: validateProps) {
     errors.name = "Name is required";
   }
   if (!values.email) {
-    errors.email = "Email address is required";
-  } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-    errors.email = "Email address is invalid";
+    errors.email = "Phone Number is required";
+  }else if (!/^\d{10,15}$/.test(values.email)) {
+    errors.email = "Phone Number is invalid";
   }
   if (!values.message) {
     errors.message = "Message is required";

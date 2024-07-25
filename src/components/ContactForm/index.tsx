@@ -32,8 +32,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                             <Col span={24}>
                                 <Input
                                     type="text"
-                                    name="Nama"
-                                    placeholder="Nama Kamu"
+                                    name="name"
+                                    placeholder="Your Name"
                                     value={values.name || ''}
                                     onChange={handleChange}
                                 />
@@ -42,8 +42,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                             <Col span={24}>
                                 <Input
                                     type="text"
-                                    name="Nomor Whatsapp"
-                                    placeholder="Nomor Whatsapp "
+                                    name="Phone Number"
+                                    placeholder="08XXXXXXXXX "
                                     value={values.email || ''}
                                     onChange={handleChange}
                                 />
@@ -59,8 +59,13 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                                 <ValidationType type="message" />
                             </Col>
                             <ButtonContainer>
-                                <Button name="submit">{t('Submit')}</Button>
+                                <Button type="submit" name="submit">
+                                    {t('Submit')}
+                                </Button>
                             </ButtonContainer>
+                            {/* <ButtonContainer>
+                                <button type="submit">Submit</button>
+                            </ButtonContainer> */}
                         </FormGroup>
                     </Slide>
                 </Col>

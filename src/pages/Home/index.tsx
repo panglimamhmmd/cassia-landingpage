@@ -32,6 +32,7 @@ const Home = () => {
                 title={AboutProduct.title}
                 content={AboutProduct.text}
                 button={AboutProduct.button}
+                id="mission"
             />
 
             <Product
