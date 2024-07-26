@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const MiddleBlockSection = styled('section')`
     background-image: url('/img/svg/shiny.svg';)
     position: relative;
-     padding: 4 rem 0 3rem;
+     padding: 4rem 0 3rem;
     text-align: center;
     display: flex;
     justify-content: center;

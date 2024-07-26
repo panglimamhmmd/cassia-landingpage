@@ -6,6 +6,7 @@ import Vela from '../../content/Vela.json';
 
 import ContactContent from '../../content/ContactContent.json';
 import AboutProduct from '../../content/AboutProduct.json';
+import ProductMainContent from '../../content/ProductMainContent.json';
 
 const Product = lazy(() => import('../../components/Product'));
 const Contact = lazy(() => import('../../components/ContactForm'));
@@ -15,24 +16,32 @@ const ScrollToTop = lazy(() => import('../../common/ScrollToTop'));
 const ContentBlock = lazy(() => import('../../components/ContentBlock'));
 const Whatsapp = lazy(() => import('../../common/Whatsapp'));
 const Maps = lazy(() => import('../../components/Maps'));
+const ProductMain = lazy(() => import('../../components/ProductMain'));
 const Home = () => {
     return (
         <Container>
             <ScrollToTop />
             <Whatsapp />
-            <ContentBlock
-                direction="right"
-                title={IntroContent.title}
-                content={IntroContent.text}
-                button={IntroContent.button}
-                icon="developer.svg"
-                id="about"
-            />
             <MiddleBlock
                 title={AboutProduct.title}
                 content={AboutProduct.text}
                 button={AboutProduct.button}
                 id="mission"
+            />
+            <ContentBlock
+                direction="right"
+                title={IntroContent.title}
+                content={IntroContent.text}
+                icon="cluster_cassia.jpg"
+                id="about"
+            />
+            <ProductMain
+                title={ProductMainContent.title}
+                content={ProductMainContent.content}
+                img1={ProductMainContent.img1}
+                img2={ProductMainContent.img2}
+                img3={ProductMainContent.img3}
+                id="product"
             />
 
             <Product
@@ -45,6 +54,7 @@ const Home = () => {
                 bathrooms={Aquila.bathrooms}
                 icon="denah_aquila.jpg"
                 id="aquila"
+                UnitSize={Aquila.size}
             />
 
             <Product
@@ -57,6 +67,7 @@ const Home = () => {
                 bathrooms={Vela.bathrooms}
                 icon="denah_vela.jpg"
                 id="vela"
+                UnitSize={Vela.size}
             />
             <Product
                 direction="left"
@@ -68,6 +79,7 @@ const Home = () => {
                 bathrooms={Lyra.bathrooms}
                 icon="denah_lyra.jpg"
                 id="lyra"
+                UnitSize={Lyra.size}
             />
             {/* <ContentBlock
                 direction="left"

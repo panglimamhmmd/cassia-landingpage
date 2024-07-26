@@ -65,3 +65,7 @@ export const ButtonWrapper = styled("div")`
 export const BoldText = styled('span')`
   font-weight: bold;
 `
+
+export const SizeTitle = styled('span')`
+  font-size: 20px;
+`

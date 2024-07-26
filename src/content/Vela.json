@@ -1,8 +1,9 @@
 {
     "title": "Vela",
-    "text": "Vela presents an everlasting home designed to cater to the aspirations of young couples in pursuit of an ideal living environment for both themselves and their children. The concept behind Vela is to provide a residence that fosters a sense of comfort, growth, and togetherness, offering a space that nurtures familial bonds.",
+    "text": "Vela menghadirkan rumah yang dirancang untuk memenuhi aspirasi pasangan muda dalam mencari lingkungan hidup yang ideal untuk mereka dan anak-anak mereka.",
     "landSize": "96",
     "buildingSize": "103",
     "bedrooms": "3 + 1",
-    "bathrooms": "3 + 1"
+    "bathrooms": "3 + 1",
+    "size": "6x16"
 }

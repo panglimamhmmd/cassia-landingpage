@@ -24,17 +24,16 @@ const MiddleBlock = () => {
                 <Row justify="center" align="middle">
                     <ContentWrapper>
                         <Col lg={24} md={24} sm={24} xs={24}>
-                            <h6>The Ideal Location</h6>
+                            <h6>Lokasi Yang Ideal</h6>
                             <Content>
-                                In the heart of Tangerang, lies an oasis which
-                                blends city living with surroundings that allow
-                                you to pursue your many passions. In just
-                                minutes, Cassia connects you with quality
-                                schools and universities, health care, sports
-                                facilities, entertainment, shopping, and the
-                                Soekarno-Hatta International Airport. Its prime
-                                site means time-saving conveniences, so you can
-                                create more special moments with loved ones.
+                                Di pusat Tangerang, Cassia menawarkan kehidupan
+                                kota dengan lingkungan yang mendukung berbagai
+                                passion Anda. Hanya beberapa menit dari sekolah,
+                                universitas, fasilitas kesehatan, olahraga,
+                                hiburan, belanja, dan Bandara Soekarno-Hatta.
+                                Lokasi strategisnya menghemat waktu Anda,
+                                memungkinkan lebih banyak momen berharga bersama
+                                orang tercinta.
                             </Content>
                             <div className="google-maps-code">
                                 <iframe

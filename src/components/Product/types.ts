@@ -7,6 +7,7 @@ export interface ContentBlockProps {
   buildingSize  : string,
   bedrooms  : string,
   bathrooms  : string,
+  UnitSize: string,
   section?: {
     title: string;
     content: string;

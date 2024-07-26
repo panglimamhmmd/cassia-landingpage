@@ -15,6 +15,7 @@ import {
     BoldText,
     StyledRow,
     ButtonWrapper,
+    SizeTitle,
 } from './styles';
 
 const ContentBlock = ({
@@ -27,6 +28,7 @@ const ContentBlock = ({
     bedrooms,
     bathrooms,
     button,
+    UnitSize,
     t,
     id,
     direction,
@@ -52,18 +54,28 @@ const ContentBlock = ({
                     </Col>
                     <Col lg={11} md={11} sm={11} xs={24}>
                         <ContentWrapper>
-                            <MinTitle>Tipe Rumah</MinTitle>
+                            <SizeTitle>{UnitSize}</SizeTitle>
                             <h6>{t(title)}</h6>
                             <Content>{t(content)}</Content>
 
                             <ServiceWrapper>
                                 <Row justify="space-between">
                                     <Col key={`${id}-land`} span={11}>
+                                        <SvgIcon
+                                            src={'land-size.svg'}
+                                            width="16px"
+                                            height="16px"
+                                        />
                                         <MinTitle>
                                             <BoldText>
                                                 Luas Tanah {landSize} m²
                                             </BoldText>
                                         </MinTitle>
+                                        <SvgIcon
+                                            src={'building-size.svg'}
+                                            width="16px"
+                                            height="16px"
+                                        />
                                         <MinTitle>
                                             <BoldText>
                                                 Luas Bangunan {buildingSize} m²
@@ -71,11 +83,21 @@ const ContentBlock = ({
                                         </MinTitle>
                                     </Col>
                                     <Col key={`${id}-rooms`} span={11}>
+                                        <SvgIcon
+                                            src={'bedroom.svg'}
+                                            width="16px"
+                                            height="16px"
+                                        />
                                         <MinTitle>
                                             <BoldText>
                                                 {bedrooms} Kamar Tidur
                                             </BoldText>
                                         </MinTitle>
+                                        <SvgIcon
+                                            src={'bathroom.svg'}
+                                            width="16px"
+                                            height="16px"
+                                        />
                                         <MinTitle>
                                             <BoldText>
                                                 {bathrooms} Kamar Mandi

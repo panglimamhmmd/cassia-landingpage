@@ -1,8 +1,9 @@
 {
     "title": "Lyra",
-    "text": "Lyra is a residential concept that prioritizes maximum comfort and flexibility for families by offering broader living spaces. This design approach aims to create a harmonious living environment that accomodates the diverse needs of families while providing a sense of openness and versatility.",
+    "text": "Lyra adalah konsep hunian yang mengutamakan kenyamanan maksimal dan fleksibilitas untuk keluarga dengan menawarkan ruang hidup yang lebih luas.",
     "landSize": "98",
     "buildingSize": "115",
     "bedrooms": "3 + 1",
-    "bathrooms": "3 + 1"
+    "bathrooms": "3 + 1",
+    "size": "7x14"
 }

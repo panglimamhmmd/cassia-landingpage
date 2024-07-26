@@ -60,3 +60,9 @@ export const ButtonWrapper = styled("div")`
     margin-left: 20px;
   }
 `;
+
+
+export const BorderRadius = styled("div")`
+  border-radius: 1rem;
+  overflow: hidden;
+`
