@@ -5,11 +5,11 @@ import {
     MiddleBlockSection,
     Content,
     ContentWrapper,
-    ImageWrapper,
     Wrapper,
     ImageDetail,
     TextImageDetail,
 } from './styles';
+import { SvgIcon } from '../../common/ImageWrapper';
 
 interface MiddleBlockProps {
     title: string;
@@ -44,13 +44,11 @@ const MiddleBlock = ({
                     <Content>{t(content)}</Content>
                     <Row justify="space-between" align="middle">
                         <Col lg={7} md={7} sm={7} xs={24}>
-                            <Wrapper>
-                                <ImageWrapper
-                                    src={`/img/svg/${img1}`}
-                                    alt={'Aquila'}
+                            <Wrapper onClick={() => scrollTo('aquila')}>
+                                <SvgIcon
+                                    src={img1}
                                     width="100%"
                                     height="100%"
-                                    onClick={() => scrollTo('aquila')}
                                 />
                                 <ImageDetail>
                                     <TextImageDetail>6x14</TextImageDetail>
@@ -60,13 +58,11 @@ const MiddleBlock = ({
                             <Content>{'Aquila'}</Content>
                         </Col>
                         <Col lg={7} md={7} sm={7} xs={24}>
-                            <Wrapper>
-                                <ImageWrapper
-                                    src={`/img/svg/${img2}`}
+                            <Wrapper onClick={() => scrollTo('vela')}>
+                                <SvgIcon
+                                    src={img2}
                                     width="100%"
                                     height="100%"
-                                    alt={'Vela'}
-                                    onClick={() => scrollTo('vela')}
                                 />
                                 <ImageDetail>
                                     <TextImageDetail>6x16</TextImageDetail>
@@ -76,13 +72,11 @@ const MiddleBlock = ({
                             <Content>{'Vela'}</Content>
                         </Col>
                         <Col lg={7} md={7} sm={7} xs={24}>
-                            <Wrapper>
-                                <ImageWrapper
-                                    src={`/img/svg/${img3}`}
+                            <Wrapper onClick={() => scrollTo('lyra')}>
+                                <SvgIcon
+                                    src={img3}
                                     width="100%"
                                     height="100%"
-                                    alt={'Lyra'}
-                                    onClick={() => scrollTo('lyra')}
                                 />
                                 <ImageDetail>
                                     <TextImageDetail>7x14</TextImageDetail>
