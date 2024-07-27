@@ -102,13 +102,16 @@ const ContentBlock = ({
                                     </Col>
                                 </Row>
                             </ServiceWrapper>
-                            <Button name="button" onClick={handleWhatsapp}>
-                                Download Brosur
-                            </Button>
                         </ContentWrapper>
                     </Col>
                     <Col lg={11} md={11} sm={12} xs={24}>
                         <SvgIcon src={icon} width="100%" height="100%" />
+                    </Col>
+
+                    <Col lg={11} md={11} sm={12} xs={24}>
+                        <Button name="button" onClick={handleWhatsapp}>
+                            Download Brosur
+                        </Button>
                     </Col>
                 </StyledRow>
             </Fade>
