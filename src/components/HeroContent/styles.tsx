@@ -17,9 +17,14 @@ export const MiddleBlockSection = styled('section')`
 
 export const Title = styled('h6')`
     @media only screen and (max-width: 768px) {
-        font-size: 12vh;
+        font-size: 1vh;
     }
-    font-family: 'ribka.otf';
+
+    @font-face {
+        font-family: 'ribka';
+        src: url('/fonts/ribka.otf') format('');
+        font-style: normal;
+    }
     font-size: 15vh;
     font-weight: bold;
     padding: 0.75rem 0 0.75rem;
