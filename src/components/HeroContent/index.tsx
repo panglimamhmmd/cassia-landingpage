@@ -1,26 +1,19 @@
 import { Row, Col } from 'antd';
 import { withTranslation, TFunction } from 'react-i18next';
 import { Slide } from 'react-awesome-reveal';
-import { Button } from '../../common/Button';
+import { Button } from '../../common/ArrowDownButton';
 import { MiddleBlockSection, Content, ContentWrapper, Title } from './styles';
 import { StyledRow } from '../ContentBlock/styles';
+import { BoldText } from '../Product/styles';
 interface MiddleBlockProps {
     title: string;
-    content: string;
     button: string;
     t: TFunction;
     id: string;
     direction: 'left' | 'right';
 }
 
-const MiddleBlock = ({
-    title,
-    content,
-    button,
-    t,
-    id,
-    direction,
-}: MiddleBlockProps) => {
+const MiddleBlock = ({ title, button, t, id, direction }: MiddleBlockProps) => {
     const scrollTo = (id: string) => {
         const element = document.getElementById(id) as HTMLDivElement;
         element.scrollIntoView({
@@ -40,17 +33,23 @@ const MiddleBlock = ({
                     <ContentWrapper>
                         <Col lg={24} md={24} sm={24} xs={24}>
                             <Title>{t(title)}</Title>
-                            <Content>{t(content)}</Content>
-                            {button && (
+                            <Content>
+                                Your <BoldText>Gateway</BoldText> To Urban
+                                Sanctuary
+                            </Content>
+                            {/* {button && (
                                 <Button
                                     name="submit"
                                     onClick={() => scrollTo('about')}
                                 >
                                     {t(button)}
                                 </Button>
-                            )}
+                            )} */}
                         </Col>
                     </ContentWrapper>
+                    <Button onClick={() => scrollTo('mission')}>
+                        <img src="/img/svg/arrow-down.svg" alt="arrow" />
+                    </Button>
                 </Row>
             </Slide>
         </MiddleBlockSection>

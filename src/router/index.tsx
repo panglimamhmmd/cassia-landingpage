@@ -14,7 +14,6 @@ const Router = () => {
                 <Header />
                 <HeroContent
                     title={HeroSectionContent.title}
-                    content={HeroSectionContent.text}
                     button={HeroSectionContent.button}
                     id="hero"
                     direction="right"

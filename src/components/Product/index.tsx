@@ -18,11 +18,17 @@ import {
     SizeTitle,
 } from './styles';
 
+import WhatsappContent from '../../content/WhatsappContent.json';
+
+const handleWhatsapp = () => {
+    const redirectUrl = WhatsappContent.url;
+    window.open(redirectUrl, '_blank');
+};
+
 const ContentBlock = ({
     icon,
     title,
     content,
-    section,
     landSize,
     buildingSize,
     bedrooms,
@@ -96,6 +102,9 @@ const ContentBlock = ({
                                     </Col>
                                 </Row>
                             </ServiceWrapper>
+                            <Button name="button" onClick={handleWhatsapp}>
+                                Download Brosur
+                            </Button>
                         </ContentWrapper>
                     </Col>
                     <Col lg={11} md={11} sm={12} xs={24}>
