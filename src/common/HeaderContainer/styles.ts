@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledContainer = styled("div")<{
   border?: boolean;
 }>`
-    background-image: url('/img/svg/sparkle.svg');
+  // background-color: #F4EEF
   position: relative;
   width: 100%;
   max-width: 1200px;

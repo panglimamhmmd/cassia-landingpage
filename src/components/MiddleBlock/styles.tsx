@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const MiddleBlockSection = styled('section')`
+    background-image: url('/img/svg/sparkle.svg');
     position: relative;
     padding: 4rem 0 3rem;
     text-align: center;
@@ -14,6 +15,8 @@ export const MiddleBlockSection = styled('section')`
 
 export const Content = styled('p')`
     padding: 0.75rem 0 0.75rem;
+    text-align: justify;
+    text-justify: inter-word;
 `;
 
 export const ContentWrapper = styled('div')`

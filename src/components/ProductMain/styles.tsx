@@ -15,6 +15,11 @@ export const MiddleBlockSection = styled('section')`
 
 export const Content = styled('p')`
     padding: 0.75rem 0 0.75rem;
+
+    @media only screen and (max-width: 414px) {
+        text-align: justify;
+        text-justify: inter-word;
+    }
 `;
 
 export const ContentWrapper = styled('div')`
