@@ -8,6 +8,7 @@ import {
     Wrapper,
     ImageDetail,
     TextImageDetail,
+    MainContent,
 } from './styles';
 import { SvgIcon } from '../../common/ImageWrapper';
 
@@ -41,7 +42,7 @@ const MiddleBlock = ({
             <Slide direction="up" triggerOnce>
                 <ContentWrapper>
                     <h6>{t(title)}</h6>
-                    <Content>{t(content)}</Content>
+                    <MainContent>{t(content)}</MainContent>
                     <Row justify="space-between" align="middle">
                         <Col lg={7} md={7} sm={7} xs={24}>
                             <Wrapper onClick={() => scrollTo('aquila')}>
