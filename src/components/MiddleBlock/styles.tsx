@@ -1,15 +1,20 @@
 import styled from 'styled-components';
 
 export const MiddleBlockSection = styled('section')`
-    background-image: url('/img/svg/sparkle.svg');
     position: relative;
     padding: 4rem 0 3rem;
     text-align: center;
     display: flex;
     justify-content: center;
+    background-color: #dbe2ef;
 
     @media screen and (max-width: 1024px) {
         padding: 5.5rem 0 3rem;
+    }
+    @media only screen and (max-width: 414px) {
+        max-width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
     }
 `;
 

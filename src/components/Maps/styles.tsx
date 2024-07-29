@@ -11,6 +11,11 @@ export const MiddleBlockSection = styled('section')`
     @media screen and (max-width: 1024px) {
         padding: 5.5rem 0 3rem;
     }
+    @media only screen and (max-width: 414px) {
+        max-width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
 `;
 
 export const Content = styled('p')`

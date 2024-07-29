@@ -3,6 +3,7 @@ import { withTranslation, TFunction } from 'react-i18next';
 import { Slide } from 'react-awesome-reveal';
 import { Button } from '../../common/Button';
 import { MiddleBlockSection, Content, ContentWrapper } from './styles';
+import { SvgIcon } from '../../common/SvgIcon';
 
 interface MiddleBlockProps {
     title: string;
@@ -25,6 +26,11 @@ const MiddleBlock = ({ title, content, button, t, id }: MiddleBlockProps) => {
                 <Row justify="center" align="middle">
                     <ContentWrapper>
                         <Col lg={24} md={24} sm={24} xs={24}>
+                            <SvgIcon
+                                src="cassia_logo_white.svg"
+                                width="100px"
+                                height="100px"
+                            />
                             <h6>{t(title)}</h6>
                             <Content>{t(content)}</Content>
                             {button && (

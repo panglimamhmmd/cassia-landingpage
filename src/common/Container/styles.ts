@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const StyledContainer = styled("div")<{
   border?: boolean;
 }>`
-    background-image: url('/img/svg/sparkle.svg');
+    // background-image: url('/img/svg/sparkle.svg');
+  // background-color: #F9F7F7;
+  background-color: #fff;
   position: relative;
   width: 100%;
   max-width: 1200px;
@@ -24,6 +26,10 @@ export const StyledContainer = styled("div")<{
 
   @media only screen and (max-width: 414px) {
     max-width: 100%;
-    padding: 0 18px;
+    // padding: 0 18px;
+    padding-left: 0;
+    padding-right: 0;
   }
+
+   
 `;
