@@ -27,7 +27,7 @@ const MiddleBlock = ({ title, content, button, t, id }: MiddleBlockProps) => {
                     <ContentWrapper>
                         <Col lg={24} md={24} sm={24} xs={24}>
                             <SvgIcon
-                                src="cassia_logo_white.svg"
+                                src="cassia_logo_blue.svg"
                                 width="100px"
                                 height="100px"
                             />
