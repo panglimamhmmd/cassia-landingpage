@@ -20,8 +20,8 @@ export interface SvgIconProps {
 }
 
 export interface DecorationProps {
-  src: string;
-  width: string;
+  src?: string;
+  width?: string;
   height: string;
   top?:string;
   bottom?:string;

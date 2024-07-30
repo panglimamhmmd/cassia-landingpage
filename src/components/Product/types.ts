@@ -27,4 +27,11 @@ export interface ContentBlockProps {
   id: string;
   direction: "left" | "right";
   background?: string;
+  decorSize?: string;
+  decorTop?:string;
+  decorBottom?:string;
+  decorLeft?:string;
+  decorRight?:string;
+  decorRotate?:string;
+  decorName?:string;
 }

@@ -89,8 +89,8 @@ const MiddleBlock = ({
                         </Col>
                     </Row>
                     <Decoration
-                        src="decor3.svg"
-                        width="200px"
+                        src="star3.svg"
+                        width="20%"
                         height="auto"
                         top="-50px"
                         right="0"

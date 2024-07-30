@@ -17,6 +17,7 @@ import {
 } from './styles';
 
 import WhatsappContent from '../../content/WhatsappContent.json';
+import { Decoration } from '../../common/Decoration';
 
 const handleWhatsapp = () => {
     const redirectUrl = WhatsappContent.url;
@@ -36,6 +37,13 @@ const ContentBlock = ({
     t,
     id,
     direction,
+    decorBottom,
+    decorTop,
+    decorLeft,
+    decorRight,
+    decorRotate,
+    decorSize,
+    decorName,
 }: ContentBlockProps) => {
     return (
         <ContentSection background={background}>
@@ -113,6 +121,17 @@ const ContentBlock = ({
                     </Col>
                 </StyledRow>
             </Fade>
+            <Decoration
+                src={decorName}
+                width={decorSize}
+                height="auto"
+                bottom={decorBottom}
+                right={decorRight}
+                top={decorTop}
+                left={decorLeft}
+                rotate={decorRotate}
+                zindex="0"
+            />
         </ContentSection>
     );
 };

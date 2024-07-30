@@ -31,9 +31,6 @@ const MiddleBlock = () => {
                                 passion Anda. Hanya beberapa menit dari sekolah,
                                 universitas, fasilitas kesehatan, olahraga,
                                 hiburan, belanja, dan Bandara Soekarno-Hatta.
-                                Lokasi strategisnya menghemat waktu Anda,
-                                memungkinkan lebih banyak momen berharga bersama
-                                orang tercinta.
                             </Content>
                             <div className="google-maps-code">
                                 <iframe

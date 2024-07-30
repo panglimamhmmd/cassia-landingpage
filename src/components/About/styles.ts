@@ -6,7 +6,7 @@ export const ContentSection = styled("section")`
   // padding: 10rem 0 8rem;
   
   @media only screen and (max-width: 1024px) {
-    padding: 4rem 0 4rem;
+    padding: 4rem 0 2rem;
   }
    @media only screen and (max-width: 414px) {
         max-width: 100%;
@@ -30,7 +30,7 @@ export const StyledRow = styled(Row)`
 `;
 
 export const ContentWrapper = styled("div")`
-  padding: 10rem 0 4rem;
+  padding: 7rem 0 7rem;
   position: relative;
   max-width: 540px;
 

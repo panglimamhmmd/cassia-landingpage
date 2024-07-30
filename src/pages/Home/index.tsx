@@ -56,6 +56,11 @@ const Home = () => {
                 icon="denah_aquila.jpg"
                 id="aquila"
                 UnitSize={Aquila.size}
+                decorSize="200px"
+                decorTop="0"
+                decorRight="0"
+                decorName="decor2.svg"
+                decorRotate=""
             />
 
             <Product
@@ -70,6 +75,11 @@ const Home = () => {
                 id="vela"
                 UnitSize={Vela.size}
                 background="#DBE2EF"
+                decorSize="200px"
+                decorTop="0"
+                decorRight="0"
+                decorName="decor2.svg"
+                decorRotate=""
             />
             <Product
                 direction="left"
@@ -82,6 +92,11 @@ const Home = () => {
                 icon="denah_lyra.jpg"
                 id="lyra"
                 UnitSize={Lyra.size}
+                decorSize="200px"
+                decorTop="0"
+                decorRight="0"
+                decorName="decor2.svg"
+                decorRotate=""
             />
             {/* <ContentBlock
                 direction="left"
