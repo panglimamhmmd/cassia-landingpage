@@ -3,7 +3,7 @@ import { withTranslation, TFunction } from 'react-i18next';
 import { Slide } from 'react-awesome-reveal';
 import { Button } from '../../common/ArrowDownButton';
 import { MiddleBlockSection, Content, ContentWrapper, Title } from './styles';
-import { StyledRow } from '../ContentBlock/styles';
+import { StyledRow } from '../About/styles';
 import { BoldText } from '../Product/styles';
 interface MiddleBlockProps {
     title: string;

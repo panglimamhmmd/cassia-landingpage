@@ -11,6 +11,7 @@ import {
     MainContent,
 } from './styles';
 import { SvgIcon } from '../../common/ImageWrapper';
+import { Decoration } from '../../common/Decoration';
 
 interface MiddleBlockProps {
     title: string;
@@ -87,6 +88,14 @@ const MiddleBlock = ({
                             <Content>{'Lyra'}</Content>
                         </Col>
                     </Row>
+                    <Decoration
+                        src="decor3.svg"
+                        width="200px"
+                        height="auto"
+                        top="-50px"
+                        right="0"
+                        zindex="-1"
+                    />
                 </ContentWrapper>
             </Slide>
         </MiddleBlockSection>

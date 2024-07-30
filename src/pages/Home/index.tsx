@@ -10,31 +10,32 @@ import ProductMainContent from '../../content/ProductMainContent.json';
 
 const Product = lazy(() => import('../../components/Product'));
 const Contact = lazy(() => import('../../components/ContactForm'));
-const MiddleBlock = lazy(() => import('../../components/MiddleBlock'));
+const MiddleBlock = lazy(() => import('../../components/Mission'));
 const Container = lazy(() => import('../../common/Container'));
 const ScrollToTop = lazy(() => import('../../common/ScrollToTop'));
-const ContentBlock = lazy(() => import('../../components/ContentBlock'));
+const ContentBlock = lazy(() => import('../../components/About'));
 const Whatsapp = lazy(() => import('../../common/Whatsapp'));
 const Maps = lazy(() => import('../../components/Maps'));
-const ProductMain = lazy(() => import('../../components/ProductMain'));
+const ProductMain = lazy(() => import('../../components/TipeUnit'));
 const Home = () => {
     return (
         <Container>
             <ScrollToTop />
             <Whatsapp />
-            <MiddleBlock
+            <ContentBlock
+                direction="left"
                 title={AboutProduct.title}
                 content={AboutProduct.text}
-                button={AboutProduct.button}
+                icon="cluster_cassia.jpg"
                 id="mission"
             />
-            <ContentBlock
-                direction="right"
+            <MiddleBlock
                 title={IntroContent.title}
                 content={IntroContent.text}
-                icon="cluster_cassia.jpg"
+                button={AboutProduct.button}
                 id="about"
             />
+
             <ProductMain
                 title={ProductMainContent.title}
                 content={ProductMainContent.content}
@@ -68,6 +69,7 @@ const Home = () => {
                 icon="denah_vela.jpg"
                 id="vela"
                 UnitSize={Vela.size}
+                background="#DBE2EF"
             />
             <Product
                 direction="left"

@@ -4,7 +4,7 @@ import { Slide } from 'react-awesome-reveal';
 import { Button } from '../../common/Button';
 import { MiddleBlockSection, Content, ContentWrapper } from './styles';
 import { SvgIcon } from '../../common/SvgIcon';
-
+import { Decoration } from '../../common/Decoration';
 interface MiddleBlockProps {
     title: string;
     content: string;
@@ -45,6 +45,13 @@ const MiddleBlock = ({ title, content, button, t, id }: MiddleBlockProps) => {
                     </ContentWrapper>
                 </Row>
             </Slide>
+            <Decoration
+                src="decor2.svg"
+                width="40%"
+                height="auto"
+                top="0"
+                right="0"
+            />
         </MiddleBlockSection>
     );
 };

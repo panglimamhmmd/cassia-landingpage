@@ -11,10 +11,8 @@ import {
     ContentWrapper,
     ServiceWrapper,
     MinTitle,
-    MinPara,
     BoldText,
     StyledRow,
-    ButtonWrapper,
     SizeTitle,
 } from './styles';
 
@@ -33,14 +31,14 @@ const ContentBlock = ({
     buildingSize,
     bedrooms,
     bathrooms,
-    button,
+    background,
     UnitSize,
     t,
     id,
     direction,
 }: ContentBlockProps) => {
     return (
-        <ContentSection>
+        <ContentSection background={background}>
             <Fade direction={direction} triggerOnce>
                 <StyledRow
                     justify="space-between"

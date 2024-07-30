@@ -16,6 +16,19 @@ export interface SvgIconProps {
   src: string;
   width: string;
   height: string;
+  onclick?: () => void;
+}
+
+export interface DecorationProps {
+  src: string;
+  width: string;
+  height: string;
+  top?:string;
+  bottom?:string;
+  left?:string;
+  right?:string;
+  rotate?:string;
+  zindex?:string;
 }
 
 export interface InputProps {

@@ -1,10 +1,9 @@
 import { Row, Col } from 'antd';
 import { withTranslation, TFunction } from 'react-i18next';
 import { SvgIcon } from '../../common/SvgIcon';
-import Container from '../../common/Container';
 
 import i18n from 'i18next';
-import { FooterSection } from './styles';
+import { FooterSection, FooterWrap } from './styles';
 
 interface SocialLinkProps {
     href: string;
@@ -33,7 +32,7 @@ const Footer = ({ t }: { t: TFunction }) => {
     return (
         <>
             <FooterSection>
-                <Container>
+                <FooterWrap>
                     {/* <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact")}</Language>
@@ -93,8 +92,10 @@ const Footer = ({ t }: { t: TFunction }) => {
               </LanguageSwitchContainer>
             </Col>
           </Row> */}
-                    <>@2024 Cassia Alam Sutera. Created by Pelajar Digital</>
-                </Container>
+                    <span>
+                        @2024 Cassia Alam Sutera. Created by Pelajar Digital
+                    </span>
+                </FooterWrap>
             </FooterSection>
         </>
     );

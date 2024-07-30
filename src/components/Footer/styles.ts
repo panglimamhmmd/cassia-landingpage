@@ -168,3 +168,13 @@ export const LanguageSwitchContainer = styled("div")`
   justify-content: space-between;
   width: 85px;
 `;
+
+
+export const FooterWrap = styled("div")`
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 60px;
+`

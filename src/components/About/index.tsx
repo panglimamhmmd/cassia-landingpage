@@ -5,6 +5,7 @@ import { withTranslation } from 'react-i18next';
 import { ContentBlockProps } from './types';
 import { Button } from '../../common/Button';
 import { SvgIcon } from '../../common/SvgIcon';
+import { Decoration } from '../../common/Decoration';
 import {
     ContentSection,
     Content,
@@ -43,9 +44,14 @@ const ContentBlock = ({
                     id={id}
                     direction={direction}
                 >
-                    <Col lg={11} md={11} sm={12} xs={24}>
+                    <Col lg={11} md={11} sm={11} xs={24}>
                         <BorderRadius>
-                            <SvgIcon src={icon} width="100%" height="100%" />
+                            <SvgIcon
+                                src={icon}
+                                width="100%"
+                                height="auto"
+                                onclick={() => scrollTo('product')}
+                            />
                         </BorderRadius>
                     </Col>
                     <Col lg={11} md={11} sm={11} xs={24}>
@@ -116,6 +122,15 @@ const ContentBlock = ({
                     </Col>
                 </StyledRow>
             </Fade>
+            <Decoration
+                src="decor2.svg"
+                width="200px"
+                height="auto"
+                bottom="0"
+                left="0"
+                rotate="180deg"
+                zindex="0"
+            />
         </ContentSection>
     );
 };

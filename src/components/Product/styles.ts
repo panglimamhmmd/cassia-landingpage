@@ -1,9 +1,11 @@
 import { Row } from "antd";
 import styled from "styled-components";
 
-export const ContentSection = styled("section")`
+export const ContentSection = styled("section") <{background?: string}>`
+  background-color : ${(p) => p.background || ""};
   position: relative;
   padding: 10rem 0 8rem;
+  border-bottom: 1px solid #e6e6e6;
 
   @media only screen and (max-width: 1024px) {
     padding: 4rem 0 4rem;

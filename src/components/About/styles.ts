@@ -3,14 +3,15 @@ import styled from "styled-components";
 
 export const ContentSection = styled("section")`
   position: relative;
-  padding: 10rem 0 8rem;
+  // padding: 10rem 0 8rem;
+  
   @media only screen and (max-width: 1024px) {
     padding: 4rem 0 4rem;
   }
    @media only screen and (max-width: 414px) {
         max-width: 100%;
-        padding-left: 18px;
-        padding-right: 18px;
+     
+        padding-top: 0rem;
     }
     
 `;
@@ -29,12 +30,17 @@ export const StyledRow = styled(Row)`
 `;
 
 export const ContentWrapper = styled("div")`
+  padding: 10rem 0 4rem;
   position: relative;
   max-width: 540px;
 
-  @media only screen and (max-width: 575px) {
+  @media only screen and (max-width: 414px) {
     padding-top: 4rem;
+       padding-left: 18px;
+        padding-right: 18px;
   }
+  
+
 `;
 
 export const ServiceWrapper = styled("div")`
@@ -72,6 +78,7 @@ export const ButtonWrapper = styled("div")`
 
 
 export const BorderRadius = styled("div")`
-  border-radius: 1rem;
+  // border-radius: 1rem;
   overflow: hidden;
+  
 `
