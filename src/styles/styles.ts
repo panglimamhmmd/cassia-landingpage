@@ -111,7 +111,7 @@ export const Styles = createGlobalStyle`
     }
 
      #heroContainerAndHeader {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/svg/backgroundnlogocompressed.svg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/svg/bgimage.webp');
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -120,3 +120,4 @@ export const Styles = createGlobalStyle`
     ;
     }
 `;
+    
