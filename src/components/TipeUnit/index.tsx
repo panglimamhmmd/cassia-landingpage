@@ -89,12 +89,21 @@ const MiddleBlock = ({
                         </Col>
                     </Row>
                     <Decoration
-                        src="star3.svg"
+                        src="starwhite.png"
                         width="20%"
                         height="auto"
                         top="-50px"
                         right="0"
                         zindex="-1"
+                    />
+                    <Decoration
+                        src="starwhite.png"
+                        width="40%"
+                        height="auto"
+                        top="-150px"
+                        left="-25px"
+                        zindex="-1"
+                        rotate="270deg"
                     />
                 </ContentWrapper>
             </Slide>

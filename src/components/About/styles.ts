@@ -82,3 +82,10 @@ export const BorderRadius = styled("div")`
   overflow: hidden;
   
 `
+export const LineBlock = styled('div')`
+    height: 100px;
+    background-color: #dbe2ef;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+`;

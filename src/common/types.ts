@@ -16,6 +16,7 @@ export interface SvgIconProps {
   src: string;
   width: string;
   height: string;
+  opacity?: string;
   onclick?: () => void;
 }
 

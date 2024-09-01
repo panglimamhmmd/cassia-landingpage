@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const StyledContainer = styled("div")<{
   border?: boolean;
 }>`
-    // background-image: url('/img/svg/sparkle.svg');
-  // background-color: #F9F7F7;
+
   background-color: #fff;
   position: relative;
   width: 100%;

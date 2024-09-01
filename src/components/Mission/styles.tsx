@@ -31,3 +31,8 @@ export const ContentWrapper = styled('div')`
         max-width: 100%;
     }
 `;
+
+export const LineBlock = styled('div')`
+    height: 20px;
+    background-color: rgb(255, 130, 92);
+`;

@@ -22,7 +22,7 @@ export const Title = styled('h6')`
 
     @font-face {
         font-family: 'ribka';
-        src: url('/fonts/ribka.otf') format('woff');
+        src: url('/fonts/ribka.otf') format('autotype');
         font-style: normal;
     }
     font-size: 15vh;

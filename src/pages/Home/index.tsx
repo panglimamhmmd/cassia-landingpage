@@ -16,6 +16,7 @@ const ScrollToTop = lazy(() => import('../../common/ScrollToTop'));
 const ContentBlock = lazy(() => import('../../components/About'));
 const Whatsapp = lazy(() => import('../../common/Whatsapp'));
 const Maps = lazy(() => import('../../components/Maps'));
+
 const ProductMain = lazy(() => import('../../components/TipeUnit'));
 const Home = () => {
     return (
@@ -29,6 +30,7 @@ const Home = () => {
                 icon="cluster_cassia.jpg"
                 id="mission"
             />
+
             <MiddleBlock
                 title={IntroContent.title}
                 content={IntroContent.text}
@@ -98,28 +100,7 @@ const Home = () => {
                 decorName="decor2.svg"
                 decorRotate=""
             />
-            {/* <ContentBlock
-                direction="left"
-                title={AboutContent.title}
-                content={AboutContent.text}
-                section={AboutContent.section}
-                icon="graphs.svg"
-                id="about"
-            />
-            <ContentBlock
-                direction="right"
-                title={MissionContent.title}
-                content={MissionContent.text}
-                icon="product-launch.svg"
-                id="mission"
-            />
-            <ContentBlock
-                direction="left"
-                title={ProductContent.title}
-                content={ProductContent.text}
-                icon="waving.svg"
-                id="product"
-            /> */}
+
             <Maps />
             <Contact
                 title={ContactContent.title}
