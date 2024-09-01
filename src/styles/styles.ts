@@ -10,7 +10,7 @@ export const Styles = createGlobalStyle`
 
     @font-face {
         font-family: "ribka";
-        src: url("/fonts/ribka.otf") format("");
+        src: url("/fonts/ribka.otf") format("opentype");
         font-style: normal;
     }
 
