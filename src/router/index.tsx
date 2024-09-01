@@ -10,7 +10,7 @@ const Router = () => {
     return (
         <Suspense fallback={null}>
             <Styles />
-            <div id="heroContainerAndHeader">
+            {/* <div id="heroContainerAndHeader">
                 <Header />
                 <HeroContent
                     title={HeroSectionContent.title}
@@ -18,7 +18,7 @@ const Router = () => {
                     id="hero"
                     direction="right"
                 />
-            </div>
+            </div> */}
             <Switch>
                 {routes.map((routeItem) => {
                     return (

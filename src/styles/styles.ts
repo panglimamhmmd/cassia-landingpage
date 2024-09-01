@@ -3,14 +3,14 @@ import { createGlobalStyle } from "styled-components";
 export const Styles = createGlobalStyle`
 
     @font-face {
-        font-family: "Motiva Sans Light";
-        src: url("/fonts/Motiva-Sans-Light.ttf") format("truetype");
+        font-family: "Trajan Pro Bold";
+        src: url("/fonts/TrajanPro-Bold.ttf") format("truetype");
         font-style: normal;
     }
 
     @font-face {
-        font-family: "ribka";
-        src: url("/fonts/ribka.otf") format("opentype");
+        font-family: "Trajan Pro Light";
+        src: url("/fonts/TrajanPro-Light.ttf") format("truetype");
         font-style: normal;
     }
 
@@ -18,7 +18,7 @@ export const Styles = createGlobalStyle`
     body,
     html,
     a {
-        font-family: 'Motiva Sans Light', sans-serif;
+        font-family: 'Trajan Pro Light', sans-serif;
     }
 
 
@@ -57,7 +57,7 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Motiva Sans Bold', serif;
+        font-family: 'Trajan Pro Bold', serif;
         color: #18216d;
         font-size: 56px;
         line-height: 1.18;

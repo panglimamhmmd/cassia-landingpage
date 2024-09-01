@@ -20,11 +20,11 @@ export const Title = styled('h6')`
         font-size: 12vh;
     }
 
-    @font-face {
-        font-family: 'ribka';
-        src: url('/fonts/ribka.otf') format('autotype');
-        font-style: normal;
-    }
+    // @font-face {
+    //     font-family: 'ribka';
+    //     src: url('/fonts/ribka.otf') format('autotype');
+    //     font-style: normal;
+    // }
     font-size: 15vh;
     font-weight: bold;
     padding: 0.75rem 0 0.75rem;
