@@ -2,6 +2,7 @@ import { TFunction } from "react-i18next";
 export interface ContainerProps {
   border?: boolean;
   children: React.ReactNode;
+  bgColor?: string;
 }
 
 export interface ButtonProps {
@@ -48,4 +49,9 @@ export interface validateProps {
   name: string;
   phone: string;
   message: string;
+}
+
+
+export interface LineBlockProps {
+  id?: string; 
 }

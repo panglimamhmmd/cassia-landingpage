@@ -38,14 +38,6 @@ const ContentBlock = ({
 
     return (
         <ContentSection>
-            <LineBlock>
-                <SvgIcon
-                    src={'logobiru2.png'}
-                    width="auto"
-                    height="80%"
-                    opacity="0.6"
-                />
-            </LineBlock>
             <Fade direction={direction} triggerOnce>
                 <StyledRow
                     justify="space-between"

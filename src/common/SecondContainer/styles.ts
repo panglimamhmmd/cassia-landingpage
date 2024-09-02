@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const StyledContainer = styled("div")<{
   border?: boolean;
+  bgColor?: string;
 }>`
 
-  background-color: #fff;
+  background-color: ${(p) => p.bgColor};
   position: relative;
   width: 100%;
   max-width: 1236px;

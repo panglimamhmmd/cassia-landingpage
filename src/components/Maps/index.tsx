@@ -4,13 +4,6 @@ import { Slide } from 'react-awesome-reveal';
 import { Button } from '../../common/Button';
 import { MiddleBlockSection, Content, ContentWrapper } from './styles';
 
-interface MiddleBlockProps {
-    title: string;
-    content: string;
-    button: string;
-    t: TFunction;
-}
-
 const MiddleBlock = () => {
     const scrollTo = (id: string) => {
         const element = document.getElementById(id) as HTMLDivElement;

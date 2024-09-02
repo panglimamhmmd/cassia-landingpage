@@ -18,7 +18,7 @@ export const Styles = createGlobalStyle`
     body,
     html,
     a {
-        font-family: 'Trajan Pro Light', sans-serif;
+        font-family: 'Trajan Pro Light', cursive, sans-serif;
     }
 
 
@@ -57,7 +57,7 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Trajan Pro Bold', serif;
+        font-family: 'Trajan Pro Bold',  cursive, serif;
         color: #18216d;
         font-size: 56px;
         line-height: 1.18;

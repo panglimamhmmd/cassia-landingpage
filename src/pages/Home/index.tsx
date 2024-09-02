@@ -20,6 +20,7 @@ const Maps = lazy(() => import('../../components/Maps'));
 const ProductMain = lazy(() => import('../../components/TipeUnit'));
 const HeroContent = lazy(() => import('../../components/HeroContent'));
 const SecondContainer = lazy(() => import('../../common/SecondContainer'));
+const LineBlock = lazy(() => import('../../components/LineBlock'));
 
 const Home = () => {
     return (
@@ -35,6 +36,11 @@ const Home = () => {
             </div>
             <ScrollToTop />
             <Whatsapp />
+
+            <SecondContainer bgColor="#dbe2ef">
+                <LineBlock />
+            </SecondContainer>
+
             <SecondContainer>
                 <ContentBlock
                     direction="left"
