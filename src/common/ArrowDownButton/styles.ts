@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledButton = styled("button")<{ color?: string }>`
   position: absolute;
-  bottom: -8rem;
+  bottom: 0;
   @media screen and (max-width: 400px) {
       bottom: -4rem;
   }
@@ -15,7 +15,7 @@ export const StyledButton = styled("button")<{ color?: string }>`
   cursor: pointer;
   max-width: 35px;
   transition: all 0.3s ease-in-out;
-  // box-shadow: 0 16px 30px rgb(23 31 114 / 20%);
+  // box-shadow: 0 16px 30px rgb(23 31 114 / 40%);
 
   &:hover,
   &:active,
@@ -38,6 +38,6 @@ export const StyledButton = styled("button")<{ color?: string }>`
     }
   }
 
-  -webkit-animation: bgcolorchange 4s infinite;
-  animation: 4s infinite bgcolorchange;
+  -webkit-animation: bgcolorchange 2s infinite;
+  animation: 2s infinite bgcolorchange;
 `;

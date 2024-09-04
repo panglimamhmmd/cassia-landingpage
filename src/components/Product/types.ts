@@ -34,4 +34,7 @@ export interface ContentBlockProps {
   decorRight?:string;
   decorRotate?:string;
   decorName?:string;
+  image1:string;
+  image2:string;
+  image3:string;
 }

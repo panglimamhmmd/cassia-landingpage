@@ -2,17 +2,25 @@ import styled from 'styled-components';
 
 export const MiddleBlockSection = styled('section')`
     position: relative;
-    padding: 8rem 0 3rem;
-    text-align: center;
+    padding: 3rem 0 3rem;
+
     display: flex;
     justify-content: center;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 414px) {
         padding: 5.5rem 0 3rem;
     }
+`;
 
-    // background-size: cover;
-    // background-attachment: fixed;
+export const ImageWrapper = styled('div')`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 `;
 
 export const Title = styled('h6')`
@@ -44,7 +52,7 @@ export const Content = styled('p')`
 `;
 
 export const ContentWrapper = styled('div')`
-    background-image: url('/img/svg/cassia_logo_white.svg');
+    // background-image: url('/img/svg/cassia_logo_white.svg');
     background-position: center;
     background-repeat: no-repeat;
     max-width: 570px;

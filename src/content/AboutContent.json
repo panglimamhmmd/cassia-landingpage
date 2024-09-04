@@ -3,14 +3,35 @@
     "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
     "section": [
         {
-            "title": "Why Antd?",
-            "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
-            "icon": "notes.svg"
+            "title": "Lokasi Yang Tenang",
+            "content": "Terletak di tengah-tengah kehijauan yang asri dan lingkungan yang tenang.",
+            "icon": "calm.png"
         },
         {
-            "title": "Why styled-components?",
-            "content": "Styled Components gives you total control over your components.",
-            "icon": "notes.svg"
+            "title": "Keamanan dan Privasi",
+            "content": "Dirancang dengan fitur keamanan canggih yang menjamin lingkungan hidup yang aman dan tenang.",
+            "icon": "safety.png"
+        },
+
+        {
+            "title": "Arsitektur Modern",
+            "content": "Cassia dirancang dengan cermat, mencerminkan estetika dan kepraktisan.",
+            "icon": "modern.png"
+        },
+        {
+            "title": "Lokasi Strategis",
+            "content": "Terletak strategis dengan akses mudah ke berbagai area vital dalam hitungan menit ",
+            "icon": "lokasi.png"
+        },
+        {
+            "title": "Fasilitas Premium",
+            "content": "Dilengkapi berbagai fasilitas premium, clubhouse modern dengan pusat kebugaran, kolam renang, dan fasilitas rekreasi",
+            "icon": "premium.png"
+        },
+        {
+            "title": "Interior Luas",
+            "content": "Interior yang dirancang baik untuk memaksimalkan penggunaan ruang, menciptakan suasana terbuka dan lapang",
+            "icon": "interior.png"
         }
     ]
 }

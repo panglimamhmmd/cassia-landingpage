@@ -2,6 +2,11 @@ import { createGlobalStyle } from "styled-components";
 
 export const Styles = createGlobalStyle`
 
+    :root {
+        --dominant-color: #0b2f9f;
+        --compliment-color: #aca9bb;
+        --accent-color: ##484554;
+    }
     @font-face {
         font-family: "Trajan Pro Bold";
         src: url("/fonts/TrajanPro-Bold.ttf") format("truetype");
@@ -27,8 +32,8 @@ export const Styles = createGlobalStyle`
         padding:0;
         border: 0;
         outline: 0;
-        background: #fff;
         overflow-x: hidden;
+        background-image: url("/img/svg/whitetexture.jpg");
     }
 
     a:hover {
@@ -111,9 +116,9 @@ export const Styles = createGlobalStyle`
     }
 
      #heroContainerAndHeader {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/svg/bgimage.webp');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/svg/bgimage1.jpeg');
     height: 100vh;
-    background-position: center;
+    background-position: bottom ;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

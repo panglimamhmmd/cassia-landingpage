@@ -9,7 +9,7 @@ const LineBlock = ({ id }: LineBlockProps) => {
                 src={'logobiru2.png'}
                 width="auto"
                 height="80%"
-                opacity="0.6"
+                opacity="1"
             />
         </LineBlocks>
     );

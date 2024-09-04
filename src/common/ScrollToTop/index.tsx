@@ -8,9 +8,9 @@ const ScrollToTop = () => {
     const checkScrollTop = useCallback(() => {
         const offsetFromTop = window.scrollY;
 
-        if (!showScroll && offsetFromTop > 350) {
+        if (!showScroll && offsetFromTop > 0) {
             setShowScroll(true);
-        } else if (offsetFromTop <= 350) {
+        } else if (offsetFromTop <= 0) {
             setShowScroll(false);
         }
     }, [showScroll]);

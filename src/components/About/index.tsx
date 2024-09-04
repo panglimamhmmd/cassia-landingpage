@@ -16,7 +16,6 @@ import {
     StyledRow,
     ButtonWrapper,
     BorderRadius,
-    LineBlock,
 } from './styles';
 
 const ContentBlock = ({
@@ -57,81 +56,19 @@ const ContentBlock = ({
                     </Col>
                     <Col lg={11} md={11} sm={11} xs={24}>
                         <ContentWrapper>
+                            <MinTitle>About Us</MinTitle>
                             <h6>{t(title)}</h6>
                             <Content>{t(content)}</Content>
-                            {direction === 'right' ? (
-                                <ButtonWrapper>
-                                    {typeof button === 'object' &&
-                                        button.map(
-                                            (
-                                                item: {
-                                                    color?: string;
-                                                    title: string;
-                                                },
-                                                id: number
-                                            ) => {
-                                                return (
-                                                    <Button
-                                                        key={id}
-                                                        color={item.color}
-                                                        onClick={() =>
-                                                            scrollTo('about')
-                                                        }
-                                                    >
-                                                        {t(item.title)}
-                                                    </Button>
-                                                );
-                                            }
-                                        )}
-                                </ButtonWrapper>
-                            ) : (
-                                <ServiceWrapper>
-                                    <Row justify="space-between">
-                                        {typeof section === 'object' &&
-                                            section.map(
-                                                (
-                                                    item: {
-                                                        title: string;
-                                                        content: string;
-                                                        icon: string;
-                                                    },
-                                                    id: number
-                                                ) => {
-                                                    return (
-                                                        <Col key={id} span={11}>
-                                                            <SvgIcon
-                                                                src={item.icon}
-                                                                width="60px"
-                                                                height="60px"
-                                                            />
-                                                            <MinTitle>
-                                                                {t(item.title)}
-                                                            </MinTitle>
-                                                            <MinPara>
-                                                                {t(
-                                                                    item.content
-                                                                )}
-                                                            </MinPara>
-                                                        </Col>
-                                                    );
-                                                }
-                                            )}
-                                    </Row>
-                                </ServiceWrapper>
-                            )}
+                            <Button
+                                name="submit"
+                                onClick={() => scrollTo('about')}
+                            >
+                                Explore More
+                            </Button>
                         </ContentWrapper>
                     </Col>
                 </StyledRow>
             </Fade>
-            <Decoration
-                src="decor2.svg"
-                width="200px"
-                height="auto"
-                bottom="0"
-                left="0"
-                rotate="180deg"
-                zindex="0"
-            />
         </ContentSection>
     );
 };

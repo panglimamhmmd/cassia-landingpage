@@ -1,14 +1,11 @@
 import styled from 'styled-components';
 
 export const MiddleBlockSection = styled('section')`
-    // background-image: url('/img/svg/shiny.svg';)
     position: relative;
     padding: 4rem 0 3rem;
     text-align: center;
     display: flex;
     justify-content: center;
-    background-color: #dbe2ef;
-
     @media screen and (max-width: 1024px) {
         padding: 5.5rem 0 3rem;
     }
@@ -21,6 +18,11 @@ export const MiddleBlockSection = styled('section')`
 
 export const Content = styled('p')`
     padding: 0.75rem 0 0.75rem;
+    // text-transform: uppercase;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'TrajanPro-Bold', serif;
+    cursor: pointer;
 `;
 
 export const MainContent = styled('p')`
@@ -56,11 +58,34 @@ export const ImageWrapper = styled('img')`
         transition: all 0.3s ease-in-out;
         background-color: #000;
         opacity: 0.5;
+
+        .img_decoration {
+            opacity: 1;
+        }
+    }
+
+    &:hover .hover-button {
+        opacity: 1;
+        visibility: visible;
     }
 `;
 
-export const ImageDetail = styled('div')`
+export const HoverButton = styled('button')`
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+`;
+
+export const ImageDetail = styled('div')`
     position: absolute;
     top: 0;
     left: 0;
@@ -75,4 +100,34 @@ export const TextImageDetail = styled('p')`
     margin: 0;
     font-weight: bold;
     letter-spacing: 2px;
+`;
+
+export const SeeDetails = styled('div')`
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+`;
+
+export const Title = styled('h6')`
+    padding: 0.5rem 0;
+    margin: 0;
+`;
+
+export const MinTitle = styled('h6')`
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2rem;
+`;
+
+export const Block = styled('div')`
+    width: 150px;
+    height: 3px;
+    background-color: #18216d;
+    position: relative;
+    margin: 0 auto;
+
+    margin-bottom: 3rem;
 `;

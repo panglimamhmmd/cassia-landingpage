@@ -2,9 +2,17 @@ import { Row, Col } from 'antd';
 import { withTranslation, TFunction } from 'react-i18next';
 import { Slide } from 'react-awesome-reveal';
 import { Button } from '../../common/ArrowDownButton';
-import { MiddleBlockSection, Content, ContentWrapper, Title } from './styles';
+import {
+    MiddleBlockSection,
+    Content,
+    ContentWrapper,
+    Title,
+    ImageWrapper,
+} from './styles';
 import { StyledRow } from '../About/styles';
 import { BoldText } from '../Product/styles';
+import { SvgIcon } from '../../common/SvgIcon';
+import { Decoration } from '../../common/Decoration';
 interface MiddleBlockProps {
     title: string;
     button: string;
@@ -21,7 +29,7 @@ const MiddleBlock = ({ title, button, t, id, direction }: MiddleBlockProps) => {
         });
     };
     return (
-        <MiddleBlockSection>
+        <MiddleBlockSection id={id}>
             <StyledRow
                 justify="space-between"
                 align="middle"
@@ -32,11 +40,16 @@ const MiddleBlock = ({ title, button, t, id, direction }: MiddleBlockProps) => {
                 <Row justify="center" align="middle">
                     <ContentWrapper>
                         <Col lg={24} md={24} sm={24} xs={24}>
-                            <Title>{t(title)}</Title>
+                            <SvgIcon
+                                src="headline.png"
+                                width="100%"
+                                height="auto"
+                            />
+                            {/* <Title>{t(title)}</Title>
                             <Content>
                                 Your <BoldText>Gateway</BoldText> To Urban
                                 Sanctuary
-                            </Content>
+                            </Content> */}
                             {/* {button && (
                                 <Button
                                     name="submit"
@@ -47,7 +60,7 @@ const MiddleBlock = ({ title, button, t, id, direction }: MiddleBlockProps) => {
                             )} */}
                         </Col>
                     </ContentWrapper>
-                    <Button onClick={() => scrollTo('mission')}>
+                    <Button onClick={() => scrollTo('whyus')}>
                         <img src="/img/svg/arrow-down.svg" alt="arrow" />
                     </Button>
                 </Row>

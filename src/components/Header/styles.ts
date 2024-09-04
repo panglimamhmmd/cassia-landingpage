@@ -8,6 +8,12 @@ export const HeaderSection = styled("header")`
     align-items: center;
     text-align: center;
   }
+  top: 0; /* Stick the element to the top of the viewport */
+  
+  z-index: 100; /* Ensure the navbar is above other content */
+  // background-color: rgba(0, 0, 0, 0, 0.61)
+    
+backdrop-filter: blur(5px);
 `;
 
 export const LogoContainer = styled(Link)`
@@ -40,7 +46,7 @@ export const Burger = styled("div")`
   display: none;
 
   svg {
-    fill: #2e186a;
+    fill: #fff;
   }
 `;
 
@@ -58,7 +64,7 @@ export const Menu = styled("h5")`
 `;
 
 export const CustomNavLinkSmall = styled(NavLink)`
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   // color: #18216d;
   color: white;
   transition: color 0.2s ease-in;

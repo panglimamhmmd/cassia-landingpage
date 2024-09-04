@@ -33,7 +33,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                                 <Input
                                     type="text"
                                     name="name"
-                                    placeholder="Your Name"
+                                    placeholder="Name"
                                     value={values.name || ''}
                                     onChange={handleChange}
                                 />
@@ -43,7 +43,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                                 <Input
                                     type="text"
                                     name="phone"
-                                    placeholder="08XXXXXXXXX "
+                                    placeholder="Phone Number"
                                     value={values.phone || ''}
                                     onChange={handleChange}
                                 />
@@ -51,16 +51,20 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                             </Col>
                             <Col span={24}>
                                 <TextArea
-                                    placeholder="Your Message"
+                                    placeholder="Message"
                                     value={values.message || ''}
                                     name="message"
                                     onChange={handleChange}
                                 />
                                 <ValidationType type="message" />
                             </Col>
+                            <h6>
+                                *Keamanan data terjamin. Kami tidak membagikan
+                                data kamu ke pihak ketiga mana pun.
+                            </h6>
                             <ButtonContainer>
                                 <Button type="submit" name="submit">
-                                    {t('Submit')}
+                                    {t('Buat Janji Temu')}
                                 </Button>
                             </ButtonContainer>
                             {/* <ButtonContainer>

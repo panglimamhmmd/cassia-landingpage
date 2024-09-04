@@ -1,0 +1,24 @@
+{
+    "section": [
+        {
+            "content": "Ke Akses Tol",
+            "title": "4 Menit",
+            "icon": "tol.png"
+        },
+        {
+            "content": "Ke Jakarta",
+            "title": "20 Menit",
+            "icon": "kota.png"
+        },
+        {
+            "content": "Ke Bandara",
+            "title": "20 Menit",
+            "icon": "bandara.png"
+        },
+        {
+            "content": "Ke Stasiun Kereta",
+            "title": "10 Menit",
+            "icon": "stasiun.png"
+        }
+    ]
+}

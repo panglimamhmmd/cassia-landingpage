@@ -92,9 +92,7 @@ const Footer = ({ t }: { t: TFunction }) => {
               </LanguageSwitchContainer>
             </Col>
           </Row> */}
-                    <span>
-                        @2024 Cassia Alam Sutera. Created by Pelajar Digital
-                    </span>
+                    <span>@ 2024 Cassia Alam Sutera.All rights reserved.</span>
                 </FooterWrap>
             </FooterSection>
         </>

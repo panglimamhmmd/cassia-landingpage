@@ -48,15 +48,7 @@ const Header = ({ t }: { t: TFunction }) => {
                     onClick={() => scrollTo('contact')}
                 >
                     <Span>
-                        <Button>
-                            {t('Contact Us')}
-                            {'  '}
-                            <SvgIcon
-                                src="wawhiteblack.svg"
-                                width="22px"
-                                height="22px"
-                            />
-                        </Button>
+                        <Button>{t('Contact Us')}</Button>
                     </Span>
                 </CustomNavLinkSmall>
             </>
@@ -68,7 +60,11 @@ const Header = ({ t }: { t: TFunction }) => {
             <Container>
                 <Row justify="space-between">
                     <LogoContainer to="/" aria-label="homepage">
-                        <SvgIcon src="logo.svg" width="101px" height="64px" />
+                        <SvgIcon
+                            src="logocassia.png"
+                            width="101px"
+                            height="auto"
+                        />
                     </LogoContainer>
                     <NotHidden>
                         <MenuItem />

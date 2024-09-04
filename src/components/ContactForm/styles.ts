@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled("div")`
-  padding: 5rem 0;
+  padding: 2rem 0;
 
   @media only screen and (max-width: 1024px) {
     padding: 3rem 0;
@@ -21,6 +21,13 @@ export const FormGroup = styled("form")`
     max-width: 100%;
     margin-top: 2rem;
   }
+
+  h6{
+    font-size: 14px;
+    color: grey;
+    text-align: right;
+    
+  }
 `;
 
 export const Span = styled("span")`
@@ -34,7 +41,7 @@ export const Span = styled("span")`
 export const ButtonContainer = styled("div")`
   text-align: end;
   position: relative;
-
+  width: 100%;
   @media only screen and (max-width: 414px) {
     padding-top: 0.75rem;
   }
