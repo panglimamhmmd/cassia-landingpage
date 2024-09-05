@@ -60,7 +60,7 @@ const MiddleBlock = ({ title, button, t, id, direction }: MiddleBlockProps) => {
                             )} */}
                         </Col>
                     </ContentWrapper>
-                    <Button onClick={() => scrollTo('whyus')}>
+                    <Button onClick={() => scrollTo('logo')}>
                         <img src="/img/svg/arrow-down.svg" alt="arrow" />
                     </Button>
                 </Row>

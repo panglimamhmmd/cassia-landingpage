@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const ContentSection = styled("section")`
   position: relative;
   @media only screen and (max-width: 414px) {
-    padding: 0rem 18px;
+      padding: 0px 0 2rem 0;
   }
 
   padding: 4rem 0;
@@ -37,7 +37,7 @@ export const ServiceWrapper = styled("div")`
 
 export const MinTitle = styled("h6")`
   font-size: 20px;
-  line-height: 1rem;
+  line-height: normal;
   padding: 0.5rem 0;
   text-transform: uppercase;
   color: #000;

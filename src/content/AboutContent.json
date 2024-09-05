@@ -5,33 +5,33 @@
         {
             "title": "Lokasi Yang Tenang",
             "content": "Terletak di tengah-tengah kehijauan yang asri dan lingkungan yang tenang.",
-            "icon": "calm.png"
+            "icon": "calmgold6.png"
         },
         {
             "title": "Keamanan dan Privasi",
             "content": "Dirancang dengan fitur keamanan canggih yang menjamin lingkungan hidup yang aman dan tenang.",
-            "icon": "safety.png"
+            "icon": "safetygold.png"
         },
 
         {
             "title": "Arsitektur Modern",
             "content": "Cassia dirancang dengan cermat, mencerminkan estetika dan kepraktisan.",
-            "icon": "modern.png"
+            "icon": "moderngold.png"
         },
         {
             "title": "Lokasi Strategis",
             "content": "Terletak strategis dengan akses mudah ke berbagai area vital dalam hitungan menit ",
-            "icon": "lokasi.png"
+            "icon": "locationgold.png"
         },
         {
             "title": "Fasilitas Premium",
             "content": "Dilengkapi berbagai fasilitas premium, clubhouse modern dengan pusat kebugaran, kolam renang, dan fasilitas rekreasi",
-            "icon": "premium.png"
+            "icon": "premiumgold.png"
         },
         {
             "title": "Interior Luas",
             "content": "Interior yang dirancang baik untuk memaksimalkan penggunaan ruang, menciptakan suasana terbuka dan lapang",
-            "icon": "interior.png"
+            "icon": "interiorgold.png"
         }
     ]
 }

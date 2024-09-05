@@ -49,7 +49,7 @@ const Home = () => {
             {/* LOGO */}
             <SecondContainer bgColor="#dbe2ef">
                 <ThirdContainer>
-                    <LineBlock />
+                    <LineBlock id="logo" />
                 </ThirdContainer>
             </SecondContainer>
             {/* INTRO */}
